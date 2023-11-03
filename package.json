@@ -1,6 +1,15 @@
 {
   "name": "jest-asset-transform",
   "version": "1.0.1",
+  "keywords": [
+    "jest",
+    "assets",
+    "images",
+    "icons",
+    "svg",
+    "react",
+    "testing"
+  ],
   "homepage": "https://github.com/ehsankhfr/jest-asset-transform.git#readme",
   "repository": {
     "type": "git",
