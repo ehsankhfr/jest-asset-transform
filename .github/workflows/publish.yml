@@ -36,3 +36,5 @@ jobs:
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: neverendingqs/gh-action-tag-on-npm-version@master
