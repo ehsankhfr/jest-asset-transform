@@ -6,7 +6,7 @@ describe("SVG Processing", () => {
     const src = "Sample SVG content";
     const result = Transform.process(src, filename);
     const matches = result.code.match(/function\s+(\w+)/);
-    const componentName = matches ? matches[1]: '';
+    const componentName = matches ? matches[1] : "";
 
     // Ensure that the generated component name is in PascalCase and includes "Svg"
     expect(componentName).toMatch(/^Svg([A-Z][a-z]+)+[A-Z0-9]*$/);
@@ -26,7 +26,7 @@ describe("SVG Processing", () => {
     const src = "Special SVG content";
     const result = Transform.process(src, filename);
     const matches = result.code.match(/function\s+(\w+)/);
-    const componentName = matches ? matches[1]: '';
+    const componentName = matches ? matches[1] : "";
 
     // Ensure that the generated component name is in PascalCase and includes "Svg"
     expect(componentName).toMatch(/^Svg([A-Z][a-z]+)+[A-Z0-9]*$/);
